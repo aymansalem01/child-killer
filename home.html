@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Charity for Orphans</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .card {
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #155724;
+        }
+        .about-section {
+            background-color: #e9f7e7;
+            padding: 30px;
+        }
+        .feedback-section {
+            background-color: #d1e7dd;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <!-- Title aligned to the left -->
+                <a class="navbar-brand fw-bold" href="#">Ramadan Charity for Orphans</a>
+                
+                <!-- Toggler button for responsive navigation -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="health.html">Health</a></li>
+                        <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+    
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="C:\xampp\htdocs\text\ramadan_events.jpg" class="d-block w-100" alt="Helping Orphans">
+            </div>
+            <div class="carousel-item">
+                <img src="cha.jpg" class="d-block w-100" alt="Food Distribution">
+            </div>
+            <div class="carousel-item">
+                <img src="charity3.jpg" class="d-block w-100" alt="Education Support">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card border-0 shadow">
+                    <img src="food.jpg" class="card-img-top" alt="Food Distribution">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Food Distribution</h5>
+                        <p class="card-text">Providing nutritious meals for orphans and needy families during Ramadan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow">
+                    <img src="teacher.jpg" class="card-img-top" alt="Education Support">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Education Support</h5>
+                        <p class="card-text">Ensuring access to quality education and resources for orphans.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow">
+                    <img src="dr.jpg" class="card-img-top" alt="Healthcare Services">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Healthcare Services</h5>
+                        <p class="card-text">Providing medical checkups and essential healthcare for children in need.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-center text-md-start">We are a non-profit organization dedicated to making a difference in the lives of orphans, especially during the blessed month of Ramadan. Our mission is to provide food, healthcare, and educational support to orphans in need, ensuring they have a brighter future.</p>
+                    <p class="text-center text-md-start">Our team consists of compassionate individuals who work tirelessly to bring relief and happiness to these children. With your support, we can continue to spread love and care to those who need it the most. Join us in making this Ramadan truly special for orphans across the region.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="about-us-image.jpg" alt="About Us" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="feedback-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Your Feedback</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="feedback" class="form-label">Your Feedback</label>
+                    <textarea class="form-control" id="feedback" rows="4" placeholder="Write your feedback here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-success text-white text-center py-3">
+        <p>&copy; 2025 Ramadan Charity. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
