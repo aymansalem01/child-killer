@@ -1,80 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <style>
-        .navbar {
-               background-color: #1c1c1c;
-           }
-           .navbar-brand {
-               color: rgb(247, 202, 68) !important;
-           }
-           .nav-link {
-               color: white !important;
-               transition: color 0.3s;
-           }
-           .nav-link:hover, .nav-link.active {
-               color: rgb(247, 202, 68) !important;
-           }
-           .err{
-            color: red;
-           }
-   </style>
+      .navbar {
+        background-color: #1c1c1c;
+      }
+      .navbar-brand {
+        color: rgb(247, 202, 68) !important;
+      }
+      .nav-link {
+        color: white !important;
+        transition: color 0.3s;
+      }
+      .nav-link:hover,
+      .nav-link.active {
+        color: rgb(247, 202, 68) !important;
+      }
+      .err {
+        color: red;
+        font-size: 0.875rem;
+      }
+      .form-container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+      .btn-custom {
+        background-color: rgb(247, 202, 68);
+        color: white;
+        border: none;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1.125rem;
+      }
+      .btn-custom:hover {
+        background-color: rgb(208, 170, 40);
+      }
 
-</head>
-<body>
+      /* Ensure footer stays at the bottom */
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+
+      .content {
+        min-height: 80vh; /* Make sure the main content has enough space */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      footer {
+        margin-top: 35px;
+      }
+    </style>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Ramadan Charity for Orphans</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="health.html">Health</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">SignUp</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Login</a></li>
-
-
-
-
-
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Ramadan Charity for Orphans</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="health.html">Health</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">SignUp</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <header>
-        <h1>Login</h1>
-    </header>
-    <section style="height: 90vh;">
-        <form>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="emailLog" required>
-                <p class="err" id="EmailErr" ></p>
 
+    <div class="content">
+      <section class="my-5">
+        <div class="form-container">
+          <h2 class="text-center mb-4">Login</h2>
+          <form>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="emailLog" class="form-control" required />
+              <p class="err" id="EmailErr"></p>
             </div>
-            <div>
-                <label for="password">Password:</label>
-                <input type="password" id="passwordLog" required>
-                <p class="err" id="passwordErr" ></p>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                id="passwordLog"
+                class="form-control"
+                required
+              />
+              <p class="err" id="passwordErr"></p>
+            </div>
+            <button type="submit" class="btn btn-custom" onclick="login()">
+              Login
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
 
-            </div>
-            
-            <button type="submit" onclick="login()">Login</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2025 Ramadan Charity. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 Ramadan Charity. All rights reserved.</p>
     </footer>
-    <script src="auth.js"> </script>
-</body>
+
+    <script src="auth.js"></script>
+  </body>
 </html>
