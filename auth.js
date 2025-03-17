@@ -61,7 +61,7 @@ function login(){
                 if(passL == users[i].password){
                     sessionStorage.setItem("name",users[i].name);
                     sessionStorage.setItem("id",users[i].id);
-                    window.location.href = "home.html";
+                    window.location.href = "index.html";
                     
                 }
                 else{
